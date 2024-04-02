@@ -3,7 +3,7 @@ import { View, Text,StyleSheet } from "react-native";
 import { GlobalStyles } from "../../constants/styles";
 function ExpenseSummary({expenses,period}) {
   let sum=0
-  const totalExpense=expenses.forEach(expense => {
+  expenses.forEach(expense => {
     sum=sum+parseInt(expense.amount)
   })
   return (
